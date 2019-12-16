@@ -65,7 +65,7 @@ class App extends React.Component {
           text: "",
           isEmpty: false //msg d'erreur
         });
-  };
+  }
 
   // task = event => {
   //   this.onclick({
