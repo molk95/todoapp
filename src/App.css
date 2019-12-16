@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  color: #fff;
+  background-color: #4696e6;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 50px;
+  padding-left: 5px;
+  border-bottom-color: 1px solid grey;
 }
+h1 {
+  display: flex;
+  justify-content: flex-end;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.sub-title {
+  display: flex;
+  justify-content: flex-end;
+}
+.place-holder {
+  padding: 10px;
+}
+.nav-bar {
+  padding: 30px;
+}
+.nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+}
+
+.place-holder {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.add-section {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-add {
+  background-color: transparent;
   color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.btn-add:hover {
+  color: #4696e6;
+  background-color: white;
+  box-shadow: 5px 5px rgb(53, 142, 231);
 }
+.complete {
+  background-color: #4696e6;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  cursor: pointer;
+  margin: 0 10px 10px 10px;
+}
+.complete:hover,
+.undo:hover,
+.delete:hover {
+  color: white;
+  background-color: #4696e6;
+  box-shadow: 5px 5px rgb(53, 142, 231);
+}
+.undo {
+  background-color: #4696e6;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin: 0 10px 10px 10px;
+  display: none;
+}
+.delete {
+  background-color: #4696e6;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin: 0 10px 10px 10px;
+}
+.tasks-done {
+  padding: 10px;
+}
+h2 {
+  color: grey;
+  display: flex;
+  justify-content: center;
+}
+li {
+  padding: 10px;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+.task {
+  padding-left: 60px;
+}
+.tasks {
+  margin: 0;
+  padding: 0;
+
+  color: grey;
+}
+#tasks li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+
+  font-size: 18px;
+  transition: 0.2s;
+}
+.btn {
+  background-color: transparent;
+  color: grey;
+  border: 1px solid #555555;
+  border-radius: 4px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 2px solid #4696e6;
+}
+.Error-msg {
+  color: red;
 }
